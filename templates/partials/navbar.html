@@ -9,10 +9,12 @@
       <div class="contact-info">
         <span>
           <i class="bi bi-telephone-fill"></i>
-          +254725410024
+          +254 725 410 024
         </span>
-        <i class="bi bi-telephone-fill"></i>
-          +254726479384
+
+        <span>
+          <i class="bi bi-telephone-fill"></i>
+          +254 726 479 384
         </span>
 
         <span>
@@ -32,9 +34,10 @@
 </div>
 
 <!-- ================= MAIN NAVBAR ================= -->
+
 <nav class="navbar navbar-expand-lg main-navbar">
   <div class="container">
-    <!-- Logo -->
+    <!-- ================= LOGO ================= -->
     <a class="navbar-brand" href="/">
       <img
         src="{% static 'images/logo.png' %}"
@@ -44,32 +47,55 @@
 
       <div class="logo-text">
         <h4>KERICHO TALANTA</h4>
-
-        <span> ATHLETICS  CLUB </span>
+        <span>Developing Champions</span>
       </div>
     </a>
 
-    <!-- Mobile Toggle -->
+    <!-- ================= MOBILE TOGGLE ================= -->
     <button
       class="navbar-toggler"
       type="button"
       data-bs-toggle="collapse"
       data-bs-target="#navbarMenu"
+      aria-controls="navbarMenu"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
     >
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <!-- Menu -->
+    <!-- ================= NAVIGATION MENU ================= -->
     <div class="collapse navbar-collapse" id="navbarMenu">
       <ul class="navbar-nav mx-auto">
-        <li class="nav-item">
+        <!-- HOME -->
+        <!-- <li class="nav-item">
           <a class="nav-link active" href="/">Home</a>
+        </li> -->
+
+        <!-- THE CLUB -->
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            data-bs-toggle="dropdown"
+          >
+            The Club
+          </a>
+
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/about/">About Us</a></li>
+            <li><a class="dropdown-item" href="/history/">Our History</a></li>
+            <li>
+              <a class="dropdown-item" href="/mission/">Mission & Vision</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="/leadership/">Leadership Team</a>
+            </li>
+            <li><a class="dropdown-item" href="/staff/">Staff & Coaches</a></li>
+          </ul>
         </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
-
+        <!-- ATHLETES -->
         <li class="nav-item dropdown">
           <a
             class="nav-link dropdown-toggle"
@@ -80,44 +106,168 @@
           </a>
 
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Elite Athletes</a></li>
-            <li><a class="dropdown-item" href="#">Junior Athletes</a></li>
-            <li><a class="dropdown-item" href="#">Achievements</a></li>
+            <li>
+              <a class="dropdown-item" href="/athletes/">Athlete Directory</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="/elite-athletes/"
+                >Elite Athletes</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="/junior-athletes/"
+                >Junior Athletes</a
+              >
+            </li>
+            <li><a class="dropdown-item" href="/rankings/">Rankings</a></li>
+            <li><a class="dropdown-item" href="/records/">Club Records</a></li>
+            <li>
+              <a class="dropdown-item" href="/hall-of-fame/">Hall of Fame</a>
+            </li>
           </ul>
         </li>
 
+        <!-- TRAINING -->
+        <!-- <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            data-bs-toggle="dropdown"
+          >
+            Training
+          </a>
+
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="/training-programs/"
+                >Training Programs</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="/training-schedule/"
+                >Training Schedule</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="/youth-development/"
+                >Youth Development</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="/high-performance/"
+                >High Performance Program</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="/camps-clinics/"
+                >Camps & Clinics</a
+              >
+            </li>
+          </ul>
+        </li> -->
+
+        <!-- COMPETITIONS -->
         <li class="nav-item dropdown">
           <a
             class="nav-link dropdown-toggle"
             href="#"
             data-bs-toggle="dropdown"
           >
-            Events
+            Competitions
           </a>
 
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Upcoming Events</a></li>
-            <li><a class="dropdown-item" href="#">Race Calendar</a></li>
-            <li><a class="dropdown-item" href="#">Results</a></li>
+            <li>
+              <a class="dropdown-item" href="/events/">Upcoming Events</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="/calendar/">Race Calendar</a>
+            </li>
+            <li><a class="dropdown-item" href="/fixtures/">Fixtures</a></li>
+            <li><a class="dropdown-item" href="/results/">Results</a></li>
+            <li>
+              <a class="dropdown-item" href="/medals/">Medals & Awards</a>
+            </li>
           </ul>
         </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="#">Gallery</a>
+        <!-- MEDIA -->
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            data-bs-toggle="dropdown"
+          >
+            Media
+          </a>
+
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/news/">News</a></li>
+            <li><a class="dropdown-item" href="/highlights/">Highlights</a></li>
+            <li><a class="dropdown-item" href="/gallery/">Photo Gallery</a></li>
+            <li><a class="dropdown-item" href="/videos/">Videos</a></li>
+            <li><a class="dropdown-item" href="/newsletter/">Newsletter</a></li>
+          </ul>
         </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="#">News</a>
+        <!-- COMMUNITY -->
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            data-bs-toggle="dropdown"
+          >
+            Community
+          </a>
+
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/membership/">Membership</a></li>
+            <li><a class="dropdown-item" href="/volunteers/">Volunteers</a></li>
+            <li>
+              <a class="dropdown-item" href="/charity/">Run For Charity</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="/outreach/">Community Outreach</a>
+            </li>
+          </ul>
         </li>
 
+        <!-- PARTNERS -->
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            data-bs-toggle="dropdown"
+          >
+            Partners
+          </a>
+
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/sponsors/">Sponsors</a></li>
+            <li>
+              <a class="dropdown-item" href="/partners/">Strategic Partners</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="/become-a-sponsor/"
+                >Become A Sponsor</a
+              >
+            </li>
+          </ul>
+        </li>
+
+        <!-- SHOP -->
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" href="/shop/">Shop</a>
+        </li>
+
+        <!-- CONTACT -->
+        <li class="nav-item">
+          <a class="nav-link" href="/contact/">Contact</a>
         </li>
       </ul>
 
-      <!-- CTA Button -->
-
-      <a href="#" class="member-btn"> Member </a>
+      <!-- ================= CTA BUTTON ================= -->
+      <a href="/membership/" class="member-btn"> Join Kericho Talanta </a>
     </div>
   </div>
 </nav>

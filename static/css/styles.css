@@ -185,7 +185,6 @@ NAVBAR
 ===================================================== */
 
 .main-navbar{
-
 position:sticky;
 top:15px;
 z-index:9999;
@@ -201,8 +200,7 @@ rgba(255,255,255,.95);
 backdrop-filter:blur(15px);
 
 box-shadow:var(--shadow);
-
-padding:14px 0;
+padding:8px 0;
 
 transition:.4s;
 
@@ -218,8 +216,8 @@ gap:15px;
 
 .logo{
 
-width:75px;
-height:75px;
+width:60px;
+height:60px;
 
 border-radius:50%;
 object-fit:contain;
@@ -265,9 +263,7 @@ gap:6px;
 color:var(--text)!important;
 
 font-weight:600;
-
-padding:12px 18px !important;
-
+padding:10px 12px !important;
 border-radius:10px;
 
 transition:.35s;
@@ -458,7 +454,7 @@ text-shadow:
 
 .hero-content p{
 
-font-size:22px;
+font-size:16px;
 
 max-width:700px;
 
