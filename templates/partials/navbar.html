@@ -1,0 +1,123 @@
+{% load static %}
+
+<!-- ================= TOP BAR ================= -->
+<style></style>
+
+<div class="top-bar">
+  <div class="container">
+    <div class="top-bar-content">
+      <div class="contact-info">
+        <span>
+          <i class="bi bi-telephone-fill"></i>
+          +254725410024
+        </span>
+        <i class="bi bi-telephone-fill"></i>
+          +254726479384
+        </span>
+
+        <span>
+          <i class="bi bi-envelope-fill"></i>
+          kerichotalanta@gmail.com
+        </span>
+      </div>
+
+      <div class="social-links">
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-twitter-x"></i></a>
+        <a href="#"><i class="bi bi-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= MAIN NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg main-navbar">
+  <div class="container">
+    <!-- Logo -->
+    <a class="navbar-brand" href="/">
+      <img
+        src="{% static 'images/logo.png' %}"
+        alt="Kericho Talanta"
+        class="logo"
+      />
+
+      <div class="logo-text">
+        <h4>KERICHO TALANTA</h4>
+
+        <span> ATHLETICS  CLUB </span>
+      </div>
+    </a>
+
+    <!-- Mobile Toggle -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarMenu"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menu -->
+    <div class="collapse navbar-collapse" id="navbarMenu">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="/">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            data-bs-toggle="dropdown"
+          >
+            Athletes
+          </a>
+
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Elite Athletes</a></li>
+            <li><a class="dropdown-item" href="#">Junior Athletes</a></li>
+            <li><a class="dropdown-item" href="#">Achievements</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            data-bs-toggle="dropdown"
+          >
+            Events
+          </a>
+
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Upcoming Events</a></li>
+            <li><a class="dropdown-item" href="#">Race Calendar</a></li>
+            <li><a class="dropdown-item" href="#">Results</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Gallery</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">News</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+
+      <!-- CTA Button -->
+
+      <a href="#" class="member-btn"> Become A Member </a>
+    </div>
+  </div>
+</nav>
