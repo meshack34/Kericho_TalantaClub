@@ -328,11 +328,10 @@ linear-gradient(
 );
 
 color:white;
-
-padding:14px 30px;
+padding:10px 20px;
+font-size:14px;
 
 border-radius:50px;
-
 font-weight:700;
 
 letter-spacing:.3px;

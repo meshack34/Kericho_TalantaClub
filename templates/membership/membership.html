@@ -1,0 +1,46 @@
+{% extends 'base.html' %} {% block content %}
+
+<section class="membership-hero">
+  <div class="container">
+    <h1>Become Part of Kenya's Next Generation of Champions</h1>
+
+    <p>
+      Join Kericho Talanta Athletics Club and unlock opportunities for growth,
+      competition and excellence.
+    </p>
+  </div>
+</section>
+
+<section class="membership-benefits">
+  <div class="container">
+    <div class="section-title">
+      <h2>Membership Benefits</h2>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4">Professional Coaching</div>
+
+      <div class="col-md-4">Competition Opportunities</div>
+
+      <div class="col-md-4">Training Programs</div>
+    </div>
+  </div>
+</section>
+
+<section class="membership-form-section">
+  <div class="container">
+    <div class="card shadow-lg p-4">
+      <h3 class="mb-4">Membership Application</h3>
+
+      <form method="POST">
+        {% csrf_token %} {{ form.as_p }}
+
+        <button type="submit" class="btn btn-success">
+          Submit Application
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
